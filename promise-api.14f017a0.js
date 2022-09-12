@@ -1,0 +1,2 @@
+var promise=new Promise((function(n,o){var e=Math.random()>.5;setTimeout((function(){e&&n("Промис выполнился успешно с результатом"),o("Промис выполнился с ошибкой")}),1e3)}));function onFullfield(n){console.log(n)}function onReject(n){console.log(n)}promise.then(onFullfield).then((function(n){return console.log(n),5})).then((function(n){console.log(n)})).catch((function(n){return console.log(n)})).finally((function(){return console.log("Я буду выполнен в любом случае")}));
+//# sourceMappingURL=promise-api.14f017a0.js.map
